@@ -1,32 +1,101 @@
-/* Basic CSS styles */
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #222;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: white;
 }
 
-h1, h2, h3 {
-    color: #333;
-    margin-top: 1.5em;
+.main-header {
+  background: linear-gradient(to bottom, #2d2d3a, #111321);
+  text-align: center;
+  padding: 40px 20px;
+  background-image: url('background.jpg'); /* Use correct image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
-a {
-    color: #007acc;
-    text-decoration: none;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
 }
 
-a:hover {
-    text-decoration: underline;
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin: 60px 0 10px;
+  font-weight: 900;
+}
+
+.topics {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 20px;
+}
+
+.register-button {
+  background-color: #C271FF;
+  color: white;
+  padding: 12px 28px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.testimonials {
+  background: linear-gradient(to bottom, #111321, #0d0d12);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.learn-from {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.learn-from .purple {
+  color: #C271FF;
+  font-weight: bold;
+}
+
+.instructors {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.instructor img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.instructor .name {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.instructor .role {
+  font-size: 0.85rem;
+  color: #d1d1d1;
 }
